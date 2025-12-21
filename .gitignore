@@ -211,6 +211,7 @@ __marimo__/
 
 # Dependências
 /node_modules
+/dependabot_demo/node_modules
 /jspm_packages
 
 # Logs

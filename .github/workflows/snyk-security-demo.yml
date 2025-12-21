@@ -17,9 +17,26 @@ jobs:
       - name: Install dependencies
         run: npm install 
 
+        #Execução do check de Snyk como SCA
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
+          #Bloqueio de vulnerabilidades Altas e Críticas, analisa todos os projetos.
           args: --severity-threshold=high --all-projects
+
+      # #Build da imagem docker caso o scan do Snyk seja bem sucedido
+      # - name: Build Docker Image
+      #   if: success() 
+      #   run: |
+      #     docker build -t meu-app-docker:latest .
+
+      # #Continuação! Scan de container usando Snyk
+      # - name: Scan Docker Image with Snyk
+      #   uses: snyk/actions/docker@master
+      #   env:
+      #     SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      #     with:
+      #     image: meu-app-docker:latest
+      #     args: --severity-threshold=high

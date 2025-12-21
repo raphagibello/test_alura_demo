@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:d7f2fd53-6048-493b-99a0-f4866c913731",
+  "serialNumber": "urn:uuid:ba83d124-46e0-4c65-b15b-c19b7f2c9de9",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-12-21T20:51:25Z",
+    "timestamp": "2025-12-21T23:33:14Z",
     "tools": {
       "components": [
         {
@@ -86,15 +86,333 @@
       },
       {
         "name": "cdx:bom:componentNamespaces",
-        "value": "@handsontable\\n@polka\\n@tinyhttp\\nactions\\nsnyk/actions"
+        "value": "@flmngr\\n@handsontable\\n@polka\\n@tinyhttp\\nactions\\nsnyk/actions"
       },
       {
         "name": "cdx:bom:componentSrcFiles",
-        "value": ".github/workflows/snyk-security-demo.yml\\ndependabot_demo/package-lock.json\\npackage-lock.json"
+        "value": ".github\\workflows\\snyk-security-demo.yml\\ndependabot_demo\\package-lock.json\\npackage-lock.json"
       }
     ]
   },
   "components": [
+    {
+      "group": "@flmngr",
+      "name": "flmngr-react",
+      "version": "2.0.13",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "d1e1db831e79e44d328deeb2509f0897818a333be13ff26cd2406dfe80d4878889ac114bea17a4593f11207a03ef03d7a73ae0591b5b86ce37a8888451bffe96"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later",
+            "url": "https://opensource.org/licenses/LGPL-3.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40flmngr/flmngr-react@2.0.13",
+      "type": "library",
+      "bom-ref": "pkg:npm/@flmngr/flmngr-react@2.0.13",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "package-lock.json"
+        },
+        {
+          "name": "ResolvedUrl",
+          "value": "https://registry.npmjs.org/@flmngr/flmngr-react/-/flmngr-react-2.0.13.tgz"
+        },
+        {
+          "name": "LocalNodeModulesPath",
+          "value": "node_modules/@flmngr/flmngr-react"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "package-lock.json"
+              }
+            ],
+            "concludedValue": "package-lock.json"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "react",
+      "version": "19.2.3",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "2aefe18586d58ce4275c3645bf6f9189b98b146c0575e78a1c570e4e5aedef1a65067c9ae4e1a7fe12110eca8389251c7ce46c0c2ecc3f1c28ae4f23070b0858"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/react@19.2.3",
+      "type": "framework",
+      "bom-ref": "pkg:npm/react@19.2.3",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "package-lock.json"
+        },
+        {
+          "name": "ResolvedUrl",
+          "value": "https://registry.npmjs.org/react/-/react-19.2.3.tgz"
+        },
+        {
+          "name": "LocalNodeModulesPath",
+          "value": "node_modules/react"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "package-lock.json"
+              }
+            ],
+            "concludedValue": "package-lock.json"
+          }
+        ]
+      },
+      "tags": [
+        "framework"
+      ]
+    },
+    {
+      "group": "",
+      "name": "react-dom",
+      "version": "19.2.3",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "c842eee1698b3f0e4caff966784a68c79af0dd111369c13ef89807a90cddd9d83e61b26e6adde31f88a781cf963d98716a817376ff72df71be17b365e4ed0606"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/react-dom@19.2.3",
+      "type": "framework",
+      "bom-ref": "pkg:npm/react-dom@19.2.3",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "package-lock.json"
+        },
+        {
+          "name": "ResolvedUrl",
+          "value": "https://registry.npmjs.org/react-dom/-/react-dom-19.2.3.tgz"
+        },
+        {
+          "name": "LocalNodeModulesPath",
+          "value": "node_modules/react-dom"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "package-lock.json"
+              }
+            ],
+            "concludedValue": "package-lock.json"
+          }
+        ]
+      },
+      "tags": [
+        "framework"
+      ]
+    },
+    {
+      "group": "",
+      "name": "scheduler",
+      "version": "0.27.0",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "78dbfe5ab55b2aed5fdef6d8253ff1b62179b320391cf20cb5ff48818fe72a0d2c5aacc0504bea63fc66ece71973fa9a7cbc7f88ef4580e99e480a78bf9b62fd"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/scheduler@0.27.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/scheduler@0.27.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "package-lock.json"
+        },
+        {
+          "name": "ResolvedUrl",
+          "value": "https://registry.npmjs.org/scheduler/-/scheduler-0.27.0.tgz"
+        },
+        {
+          "name": "LocalNodeModulesPath",
+          "value": "node_modules/scheduler"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "package-lock.json"
+              }
+            ],
+            "concludedValue": "package-lock.json"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "flmngr",
+      "version": "2.0.19",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "cb4f399bf78dd4cd28e0a904b887927fe237ff3a7bc6895e076dd6cf115dc31e9af1c95e0d39bb8853ae0c95f0196291803cc4e0d439d7f0c590c9c22dce1e92"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later",
+            "url": "https://opensource.org/licenses/LGPL-3.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:npm/flmngr@2.0.19",
+      "type": "library",
+      "bom-ref": "pkg:npm/flmngr@2.0.19",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "package-lock.json"
+        },
+        {
+          "name": "ResolvedUrl",
+          "value": "https://registry.npmjs.org/flmngr/-/flmngr-2.0.19.tgz"
+        },
+        {
+          "name": "LocalNodeModulesPath",
+          "value": "node_modules/flmngr"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "package-lock.json"
+              }
+            ],
+            "concludedValue": "package-lock.json"
+          }
+        ]
+      }
+    },
+    {
+      "group": "",
+      "name": "mime",
+      "version": "3.0.0",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "8d2094eff541d65a0858165ed7868460753ffb550c107a1a3bbab108e5493b0f46807ef65405a9a7135c8d4fb1f5ada4dc648805734ac57405a91bef67bbebdc"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/mime@3.0.0",
+      "type": "library",
+      "bom-ref": "pkg:npm/mime@3.0.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "package-lock.json"
+        },
+        {
+          "name": "ResolvedUrl",
+          "value": "https://registry.npmjs.org/mime/-/mime-3.0.0.tgz"
+        },
+        {
+          "name": "LocalNodeModulesPath",
+          "value": "node_modules/flmngr/node_modules/mime"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "package-lock.json"
+              }
+            ],
+            "concludedValue": "package-lock.json"
+          }
+        ]
+      }
+    },
     {
       "group": "",
       "name": "axios",
@@ -3494,6 +3812,61 @@
     },
     {
       "group": "",
+      "name": "extjs-gpl",
+      "version": "6.2.0",
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "03f9783ca5c4f3d7688c3a1690d2aaafeda3af217d8d7dcabae6976f735610a6002a2a4dc8fe026725468fb1c1248645f61fe2a316819b7609742925a3e5c3a5"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0",
+            "url": "https://opensource.org/licenses/GPL-3.0"
+          }
+        }
+      ],
+      "purl": "pkg:npm/extjs-gpl@6.2.0",
+      "type": "framework",
+      "bom-ref": "pkg:npm/extjs-gpl@6.2.0",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "package-lock.json"
+        },
+        {
+          "name": "ResolvedUrl",
+          "value": "https://registry.npmjs.org/extjs-gpl/-/extjs-gpl-6.2.0.tgz"
+        },
+        {
+          "name": "LocalNodeModulesPath",
+          "value": "node_modules/extjs-gpl"
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "purl",
+            "confidence": 1,
+            "methods": [
+              {
+                "technique": "manifest-analysis",
+                "confidence": 1,
+                "value": "package-lock.json"
+              }
+            ],
+            "concludedValue": "package-lock.json"
+          }
+        ]
+      },
+      "tags": [
+        "framework"
+      ]
+    },
+    {
+      "group": "",
       "name": "lodash",
       "version": "4.17.20",
       "hashes": [
@@ -5579,7 +5952,7 @@
       "properties": [
         {
           "name": "SrcFile",
-          "value": "dependabot_demo/package-lock.json"
+          "value": "dependabot_demo\\package-lock.json"
         },
         {
           "name": "ResolvedUrl",
@@ -5599,10 +5972,10 @@
               {
                 "technique": "manifest-analysis",
                 "confidence": 1,
-                "value": "dependabot_demo/package-lock.json"
+                "value": "dependabot_demo\\package-lock.json"
               }
             ],
-            "concludedValue": "dependabot_demo/package-lock.json"
+            "concludedValue": "dependabot_demo\\package-lock.json"
           }
         ]
       },
@@ -5626,7 +5999,7 @@
       "properties": [
         {
           "name": "SrcFile",
-          "value": "dependabot_demo/package-lock.json"
+          "value": "dependabot_demo\\package-lock.json"
         },
         {
           "name": "ResolvedUrl",
@@ -5646,10 +6019,10 @@
               {
                 "technique": "manifest-analysis",
                 "confidence": 1,
-                "value": "dependabot_demo/package-lock.json"
+                "value": "dependabot_demo\\package-lock.json"
               }
             ],
-            "concludedValue": "dependabot_demo/package-lock.json"
+            "concludedValue": "dependabot_demo\\package-lock.json"
           }
         ]
       }
@@ -5670,7 +6043,7 @@
       "properties": [
         {
           "name": "SrcFile",
-          "value": "dependabot_demo/package-lock.json"
+          "value": "dependabot_demo\\package-lock.json"
         },
         {
           "name": "ResolvedUrl",
@@ -5690,10 +6063,10 @@
               {
                 "technique": "manifest-analysis",
                 "confidence": 1,
-                "value": "dependabot_demo/package-lock.json"
+                "value": "dependabot_demo\\package-lock.json"
               }
             ],
-            "concludedValue": "dependabot_demo/package-lock.json"
+            "concludedValue": "dependabot_demo\\package-lock.json"
           }
         ]
       }
@@ -5714,7 +6087,7 @@
       "properties": [
         {
           "name": "SrcFile",
-          "value": "dependabot_demo/package-lock.json"
+          "value": "dependabot_demo\\package-lock.json"
         },
         {
           "name": "ResolvedUrl",
@@ -5734,10 +6107,10 @@
               {
                 "technique": "manifest-analysis",
                 "confidence": 1,
-                "value": "dependabot_demo/package-lock.json"
+                "value": "dependabot_demo\\package-lock.json"
               }
             ],
-            "concludedValue": "dependabot_demo/package-lock.json"
+            "concludedValue": "dependabot_demo\\package-lock.json"
           }
         ]
       }
@@ -5758,7 +6131,7 @@
       "properties": [
         {
           "name": "SrcFile",
-          "value": "dependabot_demo/package-lock.json"
+          "value": "dependabot_demo\\package-lock.json"
         },
         {
           "name": "ResolvedUrl",
@@ -5778,10 +6151,10 @@
               {
                 "technique": "manifest-analysis",
                 "confidence": 1,
-                "value": "dependabot_demo/package-lock.json"
+                "value": "dependabot_demo\\package-lock.json"
               }
             ],
-            "concludedValue": "dependabot_demo/package-lock.json"
+            "concludedValue": "dependabot_demo\\package-lock.json"
           }
         ]
       }
@@ -5802,7 +6175,7 @@
       "properties": [
         {
           "name": "SrcFile",
-          "value": "dependabot_demo/package-lock.json"
+          "value": "dependabot_demo\\package-lock.json"
         },
         {
           "name": "ResolvedUrl",
@@ -5822,10 +6195,10 @@
               {
                 "technique": "manifest-analysis",
                 "confidence": 1,
-                "value": "dependabot_demo/package-lock.json"
+                "value": "dependabot_demo\\package-lock.json"
               }
             ],
-            "concludedValue": "dependabot_demo/package-lock.json"
+            "concludedValue": "dependabot_demo\\package-lock.json"
           }
         ]
       }
@@ -5840,7 +6213,7 @@
       "properties": [
         {
           "name": "SrcFile",
-          "value": ".github/workflows/snyk-security-demo.yml"
+          "value": ".github\\workflows\\snyk-security-demo.yml"
         },
         {
           "name": "cdx:actions:isOfficial",
@@ -5856,10 +6229,10 @@
               {
                 "technique": "source-code-analysis",
                 "confidence": 0.6,
-                "value": ".github/workflows/snyk-security-demo.yml"
+                "value": ".github\\workflows\\snyk-security-demo.yml"
               }
             ],
-            "concludedValue": ".github/workflows/snyk-security-demo.yml"
+            "concludedValue": ".github\\workflows\\snyk-security-demo.yml"
           }
         ]
       }
@@ -5874,7 +6247,7 @@
       "properties": [
         {
           "name": "SrcFile",
-          "value": ".github/workflows/snyk-security-demo.yml"
+          "value": ".github\\workflows\\snyk-security-demo.yml"
         }
       ],
       "evidence": {
@@ -5886,10 +6259,10 @@
               {
                 "technique": "source-code-analysis",
                 "confidence": 0.6,
-                "value": ".github/workflows/snyk-security-demo.yml"
+                "value": ".github\\workflows\\snyk-security-demo.yml"
               }
             ],
-            "concludedValue": ".github/workflows/snyk-security-demo.yml"
+            "concludedValue": ".github\\workflows\\snyk-security-demo.yml"
           }
         ]
       }
@@ -5897,6 +6270,39 @@
   ],
   "services": [],
   "dependencies": [
+    {
+      "ref": "pkg:npm/react@19.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/scheduler@0.27.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/react-dom@19.2.3",
+      "dependsOn": [
+        "pkg:npm/react@19.2.3",
+        "pkg:npm/scheduler@0.27.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/mime@3.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:npm/flmngr@2.0.19",
+      "dependsOn": [
+        "pkg:npm/mime@3.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/@flmngr/flmngr-react@2.0.13",
+      "dependsOn": [
+        "pkg:npm/flmngr@2.0.19",
+        "pkg:npm/react-dom@19.2.3",
+        "pkg:npm/react@19.2.3"
+      ]
+    },
     {
       "ref": "pkg:npm/follow-redirects@1.15.11",
       "dependsOn": []
@@ -6377,6 +6783,10 @@
       ]
     },
     {
+      "ref": "pkg:npm/extjs-gpl@6.2.0",
+      "dependsOn": []
+    },
+    {
       "ref": "pkg:npm/lodash@4.17.20",
       "dependsOn": []
     },
@@ -6631,8 +7041,10 @@
     {
       "ref": "pkg:npm/test_alura_demo@1.0.0",
       "dependsOn": [
+        "pkg:npm/@flmngr/flmngr-react@2.0.13",
         "pkg:npm/axios@1.13.2",
         "pkg:npm/express@4.22.1",
+        "pkg:npm/extjs-gpl@6.2.0",
         "pkg:npm/json-server@1.0.0-beta.3",
         "pkg:npm/lodash@4.17.20",
         "pkg:npm/moment@2.30.1",
@@ -6699,8 +7111,8 @@
           ]
         }
       },
-      "timestamp": "2025-12-21T20:51:25Z",
-      "text": "This Software Bill-of-Materials (SBOM) document was created on Sunday, December 21, 2025 with cdxgen. The data was captured during the build lifecycle phase. The document describes an application named 'test_alura_demo' with version '1.0.0'. The application also has 1 child modules/components. There are 131 components. 2 package type(s) and 5 purl namespaces are described in the document under components."
+      "timestamp": "2025-12-21T23:33:14Z",
+      "text": "This Software Bill-of-Materials (SBOM) document was created on Sunday, December 21, 2025 with cdxgen. The data was captured during the build lifecycle phase. The document describes an application named 'test_alura_demo' with version '1.0.0'. The application also has 1 child modules/components. There are 138 components. 2 package type(s) and 6 purl namespaces are described in the document under components."
     }
   ]
 }

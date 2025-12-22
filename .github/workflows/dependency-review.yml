@@ -30,7 +30,7 @@ jobs:
       # 2. SCAN ON PR: Dependency Review (Vulnerabilities + Licenses)
       # This provides the rich UI feedback inside the Pull Request.
       - name: 'Dependency Review'
-        if: github.event_name == 'pull_request'
+        # if: github.event_name == 'pull_request'
         uses: actions/dependency-review-action@v4
         with:
           fail-on-severity: high

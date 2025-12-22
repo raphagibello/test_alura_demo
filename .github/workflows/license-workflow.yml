@@ -24,19 +24,8 @@ jobs:
 
       # Replacement for Snyk/Dependency Review:
       # This performs a deep scan of your files and blocks Copyleft.
-      - name: Check Licenses
-        uses: neolution-ch/action-check-licenses@v0
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          continueOnBlockedFound: false  # Stop the build if GPL is found
-          blockedLicenses: |
-            GPL
-            GPL-2.0
-            GPL-3.0
-            AGPL
-          ignoreFolders: |
-            MyUnitTestProject
-            IgnoreThisFolder
+      - name: License compliance check
+        uses: mikaelvesavuori/license-compliance-action@v1
 
       # Native security vulnerability check
       - name: Run NPM Audit

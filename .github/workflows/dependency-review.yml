@@ -33,6 +33,6 @@ jobs:
         if: github.event_name == 'pull_request'
         uses: actions/dependency-review-action@v4
         with:
-          severity-threshold: high
+          fail-on-severity: high
           # Blocks copyleft and non-commercial licenses
           allow-licenses: MIT, BSD-3-Clause, CC0-1.0

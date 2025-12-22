@@ -1,4 +1,4 @@
-name: GitHub Security & License Scan
+name: Open Source License Scanning
 
 on:
   push:
@@ -26,6 +26,8 @@ jobs:
       # This performs a deep scan of your files and blocks Copyleft.
       - name: License compliance check
         uses: mikaelvesavuori/license-compliance-action@v1
+        with:
+          allow_licenses: "MIT; ISC; 0BSD; BSD-2-Clause; BSD-3-Clause; Apache-2.0"
 
       # Native security vulnerability check
       - name: Run NPM Audit

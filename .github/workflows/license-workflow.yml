@@ -1,0 +1,43 @@
+name: GitHub Security & License Scan
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      # Replacement for Snyk/Dependency Review:
+      # This performs a deep scan of your files and blocks Copyleft.
+      - name: Check Licenses
+        uses: neolution-ch/action-check-licenses@v0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          continueOnBlockedFound: false  # Stop the build if GPL is found
+          blockedLicenses: |
+            GPL
+            GPL-2.0
+            GPL-3.0
+            AGPL
+          ignoreFolders: |
+            MyUnitTestProject
+            IgnoreThisFolder
+
+      # Native security vulnerability check
+      - name: Run NPM Audit
+        run: npm audit --audit-level=high

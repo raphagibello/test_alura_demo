@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/raphagibello/test_alura_demo#readme",
   "dependencies": {
+    "@flmngr/flmngr-react": "^2.0.13",
     "axios": "^1.10.0",
     "express": "^4.15.0",
-    "lodash": "4.17.20",
+    "extjs-gpl": "^6.2.0",
+    "lodash": "^4.17.21",
     "moment": "^2.18.0"
   },
   "devDependencies": {

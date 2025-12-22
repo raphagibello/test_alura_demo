@@ -35,4 +35,4 @@ jobs:
         with:
           fail-on-severity: high
           # Blocks copyleft and non-commercial licenses
-          allow-licenses: MIT, CC0-1.0, BSD-3-Clause 
+          allow-licenses: MIT

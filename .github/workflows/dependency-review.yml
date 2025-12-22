@@ -35,4 +35,4 @@ jobs:
         with:
           severity-threshold: high
           # Blocks copyleft and non-commercial licenses
-          allow-licenses: MIT, BSD-3-Clause, Apache-2.0
+          allow-licenses: MIT, BSD-3-Clause, Apache-2.0, CC0-1.0

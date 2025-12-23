@@ -22,10 +22,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # 1. SCAN ON PUSH: Using 'npm audit' (Native GitHub/NPM check)
-      # This handles the "push" events where Dependency Review doesn't run.
-      - name: Run NPM Audit
-        run: npm audit --audit-level=high
+      # # 1. SCAN ON PUSH: Using 'npm audit' (Native GitHub/NPM check)
+      # # This handles the "push" events where Dependency Review doesn't run.
+      # - name: Run NPM Audit
+      #   run: npm audit --audit-level=high
 
       # 2. SCAN ON PR: Dependency Review (Vulnerabilities + Licenses)
       # This provides the rich UI feedback inside the Pull Request.

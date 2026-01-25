@@ -22,7 +22,7 @@
     "cy2": "^4.0.9",
     "eplengine": "^1.0.9",
     "express": "^4.15.0",
-    "lodash": "4.17.20",
+    "lodash": "4.17.23",
     "moment": "^2.18.0"
   },
   "devDependencies": {

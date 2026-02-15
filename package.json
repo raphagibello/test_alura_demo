@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/raphagibello/test_alura_demo#readme",
   "dependencies": {
-    "axios": "^1.10.0",
+    "axios": "^1.13.5",
     "cy2": "^4.0.9",
     "eplengine": "^1.0.9",
     "express": "^4.15.0",
